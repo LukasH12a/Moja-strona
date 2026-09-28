@@ -8,3 +8,13 @@ a
 {
     color: rgb(50, 182, 187);
 }
+
+header
+{
+    border: 2px solid bisque;
+/*Obramownie  Grubość, rodzaj (linai ciala, kropeczki itp, itd)*/
+}
+main 
+{
+    background-color: chartreuse;
+}
