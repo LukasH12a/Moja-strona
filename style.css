@@ -1,6 +1,13 @@
+:root
+/* Można tu określać zmienne, wygląd strony, najwyżej w hierarchi, 
+jeśli coś nie jest określone na stronie, to wykonuje się to co jes tu */
+{
+    font-size: 15px;
+}
+
 body
 {
-    background-color: #0e0d0e;
+    background-color: #0e0d0e !important;
     color: beige;
 }
 
@@ -12,9 +19,53 @@ a
 header
 {
     border: 2px solid bisque;
-/*Obramownie  Grubość, rodzaj (linai ciala, kropeczki itp, itd)*/
+/*Obramownie  Grubość, rodzaj (linia ciala, kropeczki itp, itd)*/
 }
 main 
 {
     background-color: #363236;
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
 }
+/* Dziedziczone cechy:
+color 
+font-family  
+font-size
+font-style
+font-weight
+font-align
+
+Nie dziedziczone
+background
+
+*/
+#paragraf_wiekszy
+{
+    font-size: 2rem;
+}
+.paragraf_wiekszy
+{
+    font-size: 2em;
+}
+/* # - odowłanie do id 
+ . - odwołanie do class */
+/* em - jednostka relatywna, uzależniona od tego o ma rodzic, jeśli rodzic nie ma font-size, to szuka dalej jest to x * to co w rodzicu, x*n */
+/* rem - bierze wartość od :root, i mnoży to z :root, i mnoży przez wartosc
+obie jeśli nie ma to biorą z przeglądarki, intresuje je tylko font-size */
+
+body
+{
+    background-color: aqua;
+}
+/* !important sprawia ze ten styl najważniejszy, nienadpisywalny, ale w dziecku się to nie robi
+nadpisuje inne rzeczy podobne, class, id  */
+p{
+    font-size: 1rem !important;
+    color:aqua
+}
+header p 
+{
+    color: #363236;
+}
+/* specyficzność: 
+!important < style w znaczniku < znacznik w znaczniku semantyczntym < id < class < style.css < ogólne */
