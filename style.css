@@ -1,25 +1,29 @@
 :root
-/* Można tu określać zmienne, wygląd strony, najwyżej w hierarchi, 
-jeśli coś nie jest określone na stronie, to wykonuje się to co jes tu */
 {
-    font-size: 15px;
+    font-size: 15px; 
 }
 
 body
 {
-    background-color: #0e0d0e !important;
+    background-color: #0e0d0e ;
     color: beige;
 }
 
 a
 {
     color: rgb(50, 182, 187);
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 header
 {
     border: 2px solid bisque;
-/*Obramownie  Grubość, rodzaj (linia ciala, kropeczki itp, itd)*/
+}
+header > h1
+{
+    text-shadow: 3px 3px 2px #b119b1;
+    font-family: 'Bitcount Ink', serif;
 }
 main 
 {
@@ -27,45 +31,92 @@ main
     font-size: 10px;
     font-family: "Lato", sans-serif;
 }
-/* Dziedziczone cechy:
-color 
-font-family  
-font-size
-font-style
-font-weight
-font-align
 
-Nie dziedziczone
-background
-
-*/
-#paragraf_wiekszy
+#paragraf_wiekszy p
 {
     font-size: 2rem;
+    color: #ff0021;
 }
 .paragraf_wiekszy
 {
     font-size: 2em;
 }
-/* # - odowłanie do id 
- . - odwołanie do class */
-/* em - jednostka relatywna, uzależniona od tego o ma rodzic, jeśli rodzic nie ma font-size, to szuka dalej jest to x * to co w rodzicu, x*n */
-/* rem - bierze wartość od :root, i mnoży to z :root, i mnoży przez wartosc
-obie jeśli nie ma to biorą z przeglądarki, intresuje je tylko font-size */
-
-body
-{
-    background-color: aqua;
-}
-/* !important sprawia ze ten styl najważniejszy, nienadpisywalny, ale w dziecku się to nie robi
-nadpisuje inne rzeczy podobne, class, id  */
 p{
-    font-size: 1rem !important;
-    color:aqua
+    font-size: 1rem;
 }
 header p 
 {
     color: #363236;
+    font-size: 19px;
 }
-/* specyficzność: 
-!important < style w znaczniku < znacznik w znaczniku semantyczntym < id < class < style.css < ogólne */
+.paragraf_wiekszy > span{
+    color: #ff0021;
+    font-size: 1.2rem;
+}
+.tekst ~ span
+{
+    color: aqua;
+}
+.tekst2 + span
+{
+    color: #b119b1;
+}
+#chrupek
+{
+    color: green;
+}
+.pusta
+{
+    list-style-type: circle;
+}
+.kwadrat
+{
+    list-style-type: square;
+}
+nav ul{
+    list-style-type: none;
+}
+.numery
+{
+    list-style-type: upper-roman;
+}
+.obrazek 
+{
+    list-style-image: url(punkt.jpg);
+}
+.disc {
+    list-style-type: disc;
+}
+.decimal {
+    list-style-type: decimal;
+}
+.georgian {
+    list-style-type: georgian;
+}
+.trad-chinese-informal {
+    list-style-type: trad-chinese-informal;
+}
+.kannada {
+    list-style-type: kannada;
+}
+.str {
+    list-style-type: "-";
+}
+.custom {
+    list-style-type: custom-counter-style;
+}
+.inherit {
+    list-style-type: inherit;
+}
+.initial {
+list-style-type: initial;
+}
+.revert {
+list-style-type: revert;
+}
+.revert-layer {
+list-style-type: revert-layer;
+}
+.unset {
+list-style-type: unset;
+}
