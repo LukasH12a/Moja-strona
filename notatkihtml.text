@@ -1,5 +1,7 @@
+
 class - moze wystąpić kilka razy 
 id - może wystąpic tylko raz  
  można pisać <style> w html, ważniejsze niż style.css, nie używa się, bierze to jako szybsze ponieważ 
 ładuje się szybciej, odrazu ingonruje style.css
 Można wpisać style w html w znaczniku najważniejsze, nie robi się tak, ale reszta będzie działać, nie można tak robić
+emmet - pdopowiada co pisac, zobacz funkcje jak cos robic

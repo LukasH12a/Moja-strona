@@ -1,87 +1,135 @@
-:root{
-    --color_main: #0f0f0f;
-    --color_1: #501515;
-    --color_2: #ffffffc7;
-    color: var(--color_2);
+:root
+{
+    font-size: 15px; 
+    box-sizing: border-box;
+    /* suma szerokosci elementu (margin+padiing+border), co 
+    border-box = max, nie przekroczy, liczy w środku, max tyle ile width
+    content-box = liczenie, nie jest wliczane border do środka, wartosc domyslna*/
+}
+
+body
+{
+    background-color: #0e0d0e ;
+    color: beige;
+}
+
+a
+{
+    color: rgb(50, 182, 187);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header
+{
+    border: 2px solid bisque;
+}
+header > h1
+{
+    text-shadow: 3px 3px 2px #b119b1;
+    font-family: 'Bitcount Ink', serif;
+}
+main 
+{
+    background-color: #363236;
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+#paragraf_wiekszy p
+{
+    font-size: 2rem;
+    color: #ff0021;
+}
+.paragraf_wiekszy
+{
+    font-size: 2em;
+}
+p{
+    font-size: 1rem;
+}
+header p 
+{
+    color: #363236;
     font-size: 19px;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.paragraf_wiekszy > span{
+    color: #ff0021;
+    font-size: 1.2rem;
 }
-body{
-    background: var(--color_main);
-}
-header{
-    width: 100%;
-    background-color: var(--color_1);
-    height: 160px;
-}
-header img {
-    width: 90px; 
-    height: 150px;
-    padding: 10px;
-    float: left;
-    margin-left: 20%;
-}   
-header nav {
-    padding: 0px,50px,0px,50px;
-    margin-left: 30%;
-    width: 65%;
-    height: 150px;
-    display: flex;
-    align-items:center;
-}
-header nav li
+.tekst ~ span
 {
+    color: aqua;
+}
+.tekst2 + span
+{
+    color: #b119b1;
+}
+#chrupek
+{
+    color: green;
+}
+.pusta
+{
+    list-style-type: circle;
+}
+.kwadrat
+{
+    list-style-type: square;
+}
+nav ul{
     list-style-type: none;
-    float: left;
-    padding: 0px 10px 0px 10px;
 }
-header nav li a {
-    text-decoration: none;
-    color: aliceblue;
-}
-main{
-    padding-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;    
-}
-main > .box1 {
-    border-radius: 22px;
-    background-color: var(--color_1);
-    width: 100px;
-    margin-top: 30px;
-}
-main > #head > section > h1 {
-    font-size: 3.5rem;
-}
-main > #head > section > p {
-    font-size: 2.5rem;
-}
-main > #head > section {
-    width: 60%;
-    float: left;
-}
-main > #head > img {
-    height: 20%;
-    width: 40%;
-}
-main > #advert 
+.numery
 {
-    padding-top: 22%;
-    
+    list-style-type: upper-roman;
 }
-main > #advert > section {
-    width: 440px;
-    float: left;
+.alpha {
+    list-style-type: lower-alpha;
 }
-main > #advert > #box_1 {
-    
-    border: 3px, solid #fff;
+.obrazek 
+{
+    list-style-image: url(punkt.jpg);
 }
-main > #advert > #box_1 > p {
-    font-size: 1.5rem;
-    padding: 5px 0px 5px 0px;
+.disc {
+    list-style-type: disc;
+}
+.decimal {
+    list-style-type: decimal;
+}
+.georgian {
+    list-style-type: georgian;
+}
+.trad-chinese-informal {
+    list-style-type: trad-chinese-informal;
+}
+.kannada {
+    list-style-type: kannada;
+}
+.str {
+    list-style-type: "-";
+}
+.custom {
+    list-style-type: custom-counter-style;
+}
+.inherit {
+    list-style-type: inherit;
+}
+.initial {
+list-style-type: initial;
+}
+.revert {
+list-style-type: revert;
+}
+.revert-layer {
+list-style-type: revert-layer;
+}
+.unset {
+list-style-type: unset;
+}
+.plik {
+    list-style-image: url(Znak.jpg);
+}
+.obrazek {
+    margin: 10px;
 }

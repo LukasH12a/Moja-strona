@@ -1,4 +1,3 @@
-
 # - odowłanie do id 
  . - odwołanie do class 
 em - jednostka relatywna, uzależniona od tego o ma rodzic, jeśli rodzic nie ma font-size, to szuka dalej jest to x * to co w rodzicu, x*n
@@ -33,3 +32,6 @@ list-style-position ma wartosc
 inside
 outside - domyślna punkt poza elementem listy
 inside - punkt w elelemncie listy
+lista definicji <dl>
+<dt> - co chcemy opisac
+<dd> - opis
